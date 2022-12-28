@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SideBar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar'
 import Feed from '../components/Feed'
 import Modal from '../components/Modal'
 import axios from 'axios'
@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react'
 import Login from '../components/Login'
 import { useRecoilState } from 'recoil'
 import { modalState } from '../atoms/modalAtom'
-import MobileMenu from '../components/Mobilemenu'
+import Mobilemenu from '../components/Mobilemenu'
 
 export default function Home({ providers }) {
   const [isOpen, setIsOpen] = useRecoilState(modalState)
@@ -29,11 +29,11 @@ export default function Home({ providers }) {
         <link rel="icon" href="/Twitter-logo.svg" />
       </Head>
       <main className='h-[400px] flex max-w-[1500px] mx-auto min-h-screen'>
-        <SideBar />
+        <Sidebar />
         <Feed />
         <Widgets WidgetsN={WidgetsN} UserWidgets={UserWidgets} />
         {isOpen && <Modal />}
-        <MobileMenu />
+        <Mobilemenu />
       </main>
     </div>
 
