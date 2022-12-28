@@ -31,6 +31,6 @@ export const authOptions = {
         }
     },
     secret: process.env.JWT_SECRET
-
+// To mujito cansado
 }
 export default NextAuth(authOptions)
