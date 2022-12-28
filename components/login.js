@@ -77,7 +77,7 @@ export default function Login({ providers }) {
             </div>
         )
     }
-    function Login(email) {
+    function Loginn(email) {
         const [senha, setSenha] = useState('')
         const [eyeIcon, setEyeIcon] = useState('password')
 
@@ -201,7 +201,7 @@ export default function Login({ providers }) {
                     </div>
                 </div>
 
-                {Render === 1 ? <Inicio /> : Render === 2 ? <> <Login email={emailGlobal} /> </> : <> <Registrar /> </>}
+                {Render === 1 ? <Inicio /> : Render === 2 ? <> <Loginn email={emailGlobal} /> </> : <> <Registrar /> </>}
 
 
             </div>

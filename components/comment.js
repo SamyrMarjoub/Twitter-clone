@@ -2,7 +2,7 @@
 import React from 'react'
 import Moment from 'react-moment'
 import { ChatIcon,HeartIcon,ShareIcon,ChartBarIcon } from '@heroicons/react/outline'
-export default function comment({ id, comment, }) {
+export default function Comment({ id, comment, }) {
     return (
         <div className='p-3 flex cursor-pointer border-b border-[#2f3336]'>
             <img src={comment?.userImg} alt='' className='h-11 w-11 rounded-full' />
