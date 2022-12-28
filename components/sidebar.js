@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from 'next/image'
-import SideBarLink from './Sidebarlink'
+import Sidebarlink from './Sidebarlink'
 import { HomeIcon } from '@heroicons/react/outline'
 import { useSession, signOut } from 'next-auth/react'
 import {
@@ -24,14 +24,14 @@ export default function Sidebar() {
         <img src='https://rb.gy/ogau5a' width={30} height='30' alt='' />
       </div>
       <div className='space-y-2.5 mt-4 mb-2.5 xl:ml-24'>
-        <SideBarLink text="Home" Icon={HomeIcon} active={true} />
-        <SideBarLink text="Explore" Icon={HashtagIcon} />
-        <SideBarLink text="Notifications" Icon={BellIcon} />
-        <SideBarLink text="Messages" Icon={InboxIcon} />
-        <SideBarLink text="Bookmarks" Icon={BookmarkIcon} />
-        <SideBarLink text="Lists" Icon={ClipboardListIcon} />
-        <SideBarLink text="Profile" Icon={UserIcon} />
-        <SideBarLink text="More" Icon={DotsCircleHorizontalIcon} />
+        <Sidebarlink text="Home" Icon={HomeIcon} active={true} />
+        <Sidebarlink text="Explore" Icon={HashtagIcon} />
+        <Sidebarlink text="Notifications" Icon={BellIcon} />
+        <Sidebarlink text="Messages" Icon={InboxIcon} />
+        <Sidebarlink text="Bookmarks" Icon={BookmarkIcon} />
+        <Sidebarlink text="Lists" Icon={ClipboardListIcon} />
+        <Sidebarlink text="Profile" Icon={UserIcon} />
+        <Sidebarlink text="More" Icon={DotsCircleHorizontalIcon} />
       </div>
 
       <button className='hidden xl:inline ml-auto bg-[#1d9bf0]
