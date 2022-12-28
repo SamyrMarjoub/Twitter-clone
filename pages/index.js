@@ -1,19 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import SideBar from '../components/sidebar'
-import Feed from '../components/feed'
-import Modal from '../components/modal'
+import SideBar from '../components/Sidebar'
+import Feed from '../components/Feed'
+import Modal from '../components/Modal'
 import axios from 'axios'
 import { getProviders, getSession, useSession } from "next-auth/react";
 import WidgetsN from './api/jsonWidget'
-import Widgets from '../components/widgets'
+import Widgets from '../components/Widgets'
 import UserWidgets from './api/userWidget'
 import { useEffect, useState } from 'react'
-import Login from '../components/login'
+import Login from '../components/Login'
 import { useRecoilState } from 'recoil'
 import { modalState } from '../atoms/modalAtom'
-import MobileMenu from '../components/mobilemenu'
+import MobileMenu from '../components/Mobilemenu'
 
 export default function Home({ providers }) {
   const [isOpen, setIsOpen] = useRecoilState(modalState)
